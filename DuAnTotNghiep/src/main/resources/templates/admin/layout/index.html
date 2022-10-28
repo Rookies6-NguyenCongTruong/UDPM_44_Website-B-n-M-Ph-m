@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(main)">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <!-- Latest compiled and minified CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <style>
+    a:hover {
+       text-decoration: none;
+       background-color: rgb(28, 5, 131);
+    }
+  </style>
+
+</head>
+
+<body class="container-fluid">
+
+  <div class="row">
+    <div class="col-md-2" style="background-color:rgb(99, 12, 238) ;">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-grin-wink" style="color: aliceblue;"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3 text-white fw-bold">
+
+          Cosmetics<sup>shop</sup></div>
+      </a>
+      <hr class="sidebar-divider" style="color: aliceblue;">
+
+      <ul class="nav flex-column text-white">
+        <li class="nav-item">
+          <i class="fa-solid fa-gauge"></i>
+          <a class="nav-link active text-white" aria-current="page" href="#">Dashboard</a>
+        </li>
+      </ul>
+
+      <hr class="sidebar-divider" style="color: aliceblue;">
+
+
+      <ul class="nav flex-column ">
+        <p class="text-secondary fw-bold pt-3">STORE MANAGER</p>
+        <li class="nav-item pt-2">
+          <a class="nav-link  text-white" aria-current="page" href="#">Cate Management</a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-white" href="#">News Management</a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-white" href="#">Discount Management</a>
+        </li>
+        <li class="nav-item  pt-2">
+          <a class="nav-link text-white" href="#">Banner Management</a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-white">Products Management</a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-white">Supplier Management</a>
+        </li>
+      </ul>
+      <hr class="sidebar-divider" style="color: aliceblue;">
+      <ul class="nav flex-column ">
+        <p class="text-secondary fw-bold pt-3">SALES MANAGER</p>
+        <li class="nav-item pt-2">
+          <a class="nav-link  text-white" aria-current="page" href="#">Orders Management</a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-white" href="#">Customer Management</a>
+        </li>
+      </ul>
+      <hr class="sidebar-divider" style="color: aliceblue;">
+      <ul class="nav flex-column " >
+        <p class="text-secondary fw-bold pt-3">SETTING</p>
+          <li class="nav-item pt-2">
+            <a class="nav-link  text-white"  href="#">About</a>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-white" href="#">Help</a>
+          </li>
+        </ul>
+        <hr class="sidebar-divider" style="color: aliceblue;">
+        <hr>
+        <div class="text-center">
+          <p><Strong>Fax:</Strong>0965221785</p>
+          <p>Ngách 132/28-Đại linh-Trung Văn-Nam Từ Niêm-Hà Nội</p>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-10 ">
+        <nav class="navbar  row" style="background-color: #e3f2fd;">
+                <div class="col-md-5">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="col-md-7">
+                  <ul class="nav justify-content-end">
+                    
+                    <li class="nav-item">
+                      <i class="fa-sharp fa-solid fa-user-tie"></i>
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <i class="fa-sharp fa-solid fa-user-tie"></i>
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <li class="nav-item">
+                      <i class="fa-sharp fa-solid fa-user-tie"></i>
+                      <a class="nav-link disabled">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+        </nav>
+      
+      <div class="container-fluid" style="height: 900px; background-color: brown;">
+        
+      </div>
+	
+      <footer class="sticky-footer bg-secondary">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Admin &copy; Cosmetics Shop is a website 2022</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
