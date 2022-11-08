@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{/customer/layout/index :: dynamic(~{::main})}">
+<style>
+#header {
+	background:
+		url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+		center center/cover no-repeat;
+}
+
+
+
+</style>
+<body>
+	<main class="row">
+		<section id="gallery" class="">
+			<div class="container-fluid">
+				<div class="row pt-5">
+					<div class="card col-md-3 p-2" th:each="items: ${listProduct}">
+					
+						<div class="container">
+						  <img th:src="@{|/images/${items.picture1}}|" alt="Avatar" class="image" style="width:100%">
+						  <div class="middle">
+						    <a class="text" th:href="@{|/product/detail/${items.id}|}">Detail</a>
+						  </div>
+						</div>
+						
+							
+						<div class="card-body">
+							<h4 style="text-decoration:line-through;">[[${items.price+items.price*items.discount.moneyLimit/100}]]đ</h4>
+							
+							<h3 class="text-danger">[[${items.price}]]</h3>
+							
+							 <a
+								th:attr="ng-click=@{|cart.add(${items.id})|}"
+								class="btn btn-outline-danger btn-sm">Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

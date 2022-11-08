@@ -14,6 +14,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -55,9 +57,13 @@ public class Account implements Serializable {
 	@Column(name="address")
 	private String address ;
 	
+	
 	@OneToMany(mappedBy = "accountRole")
+	@JsonIgnore
 	private List<Role> roles ;
 	
+	
 	@OneToMany(mappedBy = "accountOrder")
+	@JsonIgnore
 	private List<Order> orders ;
 }

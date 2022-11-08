@@ -13,6 +13,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +27,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor @AllArgsConstructor
 @Table(name="products")
 public class Product  implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +39,9 @@ public class Product  implements Serializable{
 	
 	@Column(name="name")
 	private String name ;
+	
+	@Column(name="price")
+	private Double price ;
 	
 	@Column(name="description")
 	private String description ;
@@ -40,6 +52,7 @@ public class Product  implements Serializable{
 	@Column(name="picture2")
 	private String picture2 ;
 	
+	@Temporal(TemporalType.DATE)
 	@Column(name="create_date")
 	private Date createDate ;
 	
@@ -48,6 +61,12 @@ public class Product  implements Serializable{
 	
 	@Column(name="expire_date")
 	private Date expireDate ;
+	
+	@Column(name="quantity")
+	private Integer quantity ;
+	
+	@Column(name="quantity_sold")
+	private Integer quantitySold ;
 	
 	@OneToMany(mappedBy = "product")
 	private List<Favourite> favourities ;
@@ -60,9 +79,9 @@ public class Product  implements Serializable{
 	@JoinColumn(name = "supcategory_id")
 	private SubCategory subCategory ;
 	
-	@ManyToOne
-	@JoinColumn(name = "capacity_id")
-	private Capacity capacity ;
+	@OneToMany(mappedBy = "productCapacities")
+	@JsonIgnore
+	private List<Capacity> capacities ;
 	
 	@ManyToOne
 	@JoinColumn(name = "discount_id")
@@ -70,5 +89,6 @@ public class Product  implements Serializable{
 	
 	
 	@OneToMany(mappedBy = "product")
+	@JsonIgnore
 	private List<OrderDetail> orderDetails ;
 }

@@ -16,6 +16,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -53,13 +55,17 @@ public class Order implements Serializable {
 	@JoinColumn(name="voucher_id")
 	private Voucher voucher ;
 	
+	
 	@ManyToOne
 	@JoinColumn(name="payment_id")
 	private Payment payment ;
 	
 	@OneToMany(mappedBy = "order")
+	@JsonIgnore
 	private List<OrderDetail> orderDetails ;
 	
+	
 	@OneToMany(mappedBy = "order")
+	@JsonIgnore
 	private List<PaymentHistory> paymentHistories ;
 }

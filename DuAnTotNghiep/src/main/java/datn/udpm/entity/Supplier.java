@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -67,5 +69,6 @@ public class Supplier implements Serializable {
 	
 	
 	@OneToMany(mappedBy = "supplier")
+	@JsonIgnore
 	private List<Product> products ;
 }

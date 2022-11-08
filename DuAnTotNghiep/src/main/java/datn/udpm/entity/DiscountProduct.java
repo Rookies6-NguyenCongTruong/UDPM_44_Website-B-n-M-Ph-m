@@ -13,6 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,8 +36,6 @@ public class DiscountProduct implements Serializable {
 	@Column(name="code")
 	private String code ;
 	
-	@Column(name="price")
-	private Double price ;
 	
 	@Column(name = "quantity")
 	private Integer quantity ;
@@ -54,5 +54,6 @@ public class DiscountProduct implements Serializable {
 	
 	
 	@OneToMany(mappedBy = "discount")
+	@JsonIgnore
 	private List<Product> products ;
 }
