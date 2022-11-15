@@ -1,5 +1,6 @@
 <div xmlns:th="http://www.thymeleaf.org">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-3">
+	
+	<nav class="navbar navbar-collapse navbar-expand-lg navbar-dark mt-3" style="background-color: #F5F1F0">
 		<a class="navbar-brand" href="#"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#main_nav" aria-expanded="false"
@@ -11,10 +12,10 @@
 			<ul class="navbar-nav nav-pills">
 				<li class="nav-item dropdown">
 				<a
-					class="nav-link" data-toggle="dropdown">
+					class="nav-link" data-toggle="dropdown" style="color: black;" href="#">
 						[[${items.name}]] </a>
 				
-					<ul class="dropdown-menu fade-up">
+					<ul class="dropdown-menu fade-down">
 						<li th:each="subItem :${items.subCategories}">
 							<a class="dropdown-item" 
 								th:href="@{|/product/list?cid=${subItem.id}|}"

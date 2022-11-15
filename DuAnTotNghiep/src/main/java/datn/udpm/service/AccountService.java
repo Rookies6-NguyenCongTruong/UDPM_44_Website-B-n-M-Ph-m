@@ -1,5 +1,7 @@
 package datn.udpm.service;
 
-public interface AccountService {
+import datn.udpm.entity.Account;
 
+public interface AccountService {
+	public Account findByEmail(String email);
 }

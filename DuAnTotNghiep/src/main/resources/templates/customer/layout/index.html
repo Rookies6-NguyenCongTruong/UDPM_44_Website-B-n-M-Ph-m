@@ -61,51 +61,48 @@
 		top: 100%;
 		transform: rotateX(0deg);
 	}
-	
 }
 /* ============ desktop view .end// ============ */
 .a {
-  position: relative;
-  width: 50%;
+	position: relative;
+	width: 50%;
 }
 
 .image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .container:hover .image {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 
 .container:hover .middle {
-  opacity: 1;
+	opacity: 1;
 }
 
 .text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-  text-decoration: none ;
+	color: lime;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 16px 32px;
+	text-decoration: none;
 }
-
-
 </style>
 
 
@@ -128,53 +125,11 @@
 		</div>
 	</header>
 
-	<div class="row">
-		<div class="col-md-12">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 pt-3">
-						<div id="carouselExampleControls" class="carousel slide"
-							data-bs-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img
-										src="https://image.thanhnien.vn/w1024/Uploaded/2022/urwqwc.zl/2021_01_12/maihan1/mh_1_iroq.jpg"
-										style="width: 900px; height: 200px" class="d-block w-100"
-										alt="...">
-								</div>
-								<div class="carousel-item">
-									<img
-										src="https://imagevietnam.vn/images/_thumbs/my_pham_image_skincare.jpg"
-										class="d-block w-100" style="width: 900px; height: 200px"
-										alt="...">
-								</div>
-								<div class="carousel-item">
-									<img
-										src="https://cdn.shopify.com/s/files/1/0226/6225/articles/Untitled_design_-_2022-05-23T123718.590_2048x2048.jpg?v=1653305857"
-										style="width: 900px; height: 200px" class="d-block w-100"
-										alt="...">
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button"
-								data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button"
-								data-bs-target="#carouselExampleControls" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-12">
-			<div th:replace="customer/layout/_category.html"></div>
-		</div>
-		
+
+	<div class="col-md-12">
+		<div th:replace="customer/layout/_category.html"></div>
 	</div>
+
 
 
 
@@ -187,12 +142,95 @@
 		</div>
 	</div>
 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card border border-0">
+					<div class="card-header" style="font-weight: bold; color: #EC8CCD">
+						TIN TỨC NỔI BẬT</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="card"  style="width: 18rem; padding: 3px">
+								<img src="https://nubeauty.com.vn/wp-content/uploads/2022/06/Collagen-Plus-Nu-Skin-chinh-hang-gia-bao-nhieu.jpg"
+								 class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Giá Beauty Focus Collagen Plus chính hãng bao nhiêu? Mua ở đâu...</h5>
+									<p class="card-text">Giá là điều khiến bạn phải lo lắng vì chúng một phần nào đó quyết định về chất lượng sản phẩm. 
+									Chi tiết giá Beauty Focus Collagen...</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card"  style="width: 18rem; padding: 3px">
+								<img src="https://nubeauty.com.vn/wp-content/uploads/2022/04/Bao-ve-lan-da-cung-Collagen-Plus-Nu-Skin.jpg"
+								 class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">3 công dụng của Beauty Focus Collagen+ Nuskin</h5>
+									<p class="card-text">Sự khác biệt đến từ công dụng của Beauty Focus Collagen+ là gì? Hiện nay, có rất nhiều người trong chúng ta gặp phải tình trạng da...</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card"  style="width: 18rem; padding: 3px">
+								<img src="https://nubeauty.com.vn/wp-content/uploads/2022/05/Collagen-Plus-Nuskin-co-thuc-su-tot-hay-khong-cung-Nubeauty-kiem-chung.jpg"
+								 class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Review Beauty Focus Collagen Plus có tốt không ? Nên mua ở...</h5>
+									<p class="card-text">Tìm hiểu và giải đáp sản phẩm Beauty Focus Collagen Plus có tốt không? Giá trên thị trường như thế nào? Nên mua ở đâu tốt nhất...</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card"  style="width: 18rem; padding: 3px">
+								<img src="https://nubeauty.com.vn/wp-content/uploads/2022/05/Su-dung-inner-Focus-Collagen-Plus-cua-Nuskin-nhu-the-nao-cho-chuan.jpg"
+								 class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Cách sử dụng Beauty Focus Collagen Plus Nuskin và ai khôn...</h5>
+									<p class="card-text">Bài viết này sẽ hướng dẫn bạn chi tiết về cách sử dụng Beauty Focus Collagen Plus đúng cách. Bao gồm về liều lượng, đối tượn...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<footer class="row pt-3">
 		<div class="col-md-12 bg-secondary">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Laborum minima voluptatibus nostrum temporibus dignissimos!
-				Incidunt, aspernatur ex. Praesentium sed in, recusandae maxime iusto
-				ex assumenda repudiandae quaerat deserunt molestiae qui!</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-4 fw-bold m-2 pt-3 text-light">
+						<p>Địa chỉ Comestic Shop - Sức khỏe Sắc đẹp : Lưu ý quý khách vui lòng gọi trước khi <br>
+						qua mua hàng</p> 
+						<p>Địa chỉ shop :Ngõ 28 Đại Linh -Trung Văn-Nam Từ Niêm-Hà Nội</p>
+						<p>ĐT : 0965221785-0435343423-Email :Duongnvph17448@fpt.edu.vn</p>
+					</div>
+					<div class="col-md-6 pt-3">
+						<img alt="" src="https://nubeauty.com.vn/wp-content/uploads/2022/02/logo-bo-cong-thuong.png"
+							style="width: 170px ;height: 100px"
+						>
+						<p class="fw-bold text-light">Mã GN :GX24hcom</p>
+						<h2 style="color: white;">
+								Cosmetics <sup>Shop</sup>
+							</h2>
+					</div>
+					<div class="col-md-1">
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center text-light">
+						CÔNG TY TNHH NUBEAUTY   – GPDKKD: 0316485294 do sở KH & ĐT TP.HCM cấp lần đầu ngày 15/09/2020 cấp lần 2 ngày 14/12/2021.
+
+Địa chỉ: 14/4/8 Đường 30, Phường 6, Quận Gò Vấp, TP.HCM.
+
+Copyright © by Nu Beauty – Sức Khoẻ Sắc Đẹp
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
