@@ -29,10 +29,15 @@ import lombok.NoArgsConstructor;
 @Table(name = "accounts")
 public class Account implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	
 	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id ;
+	@Column(name="email")
+	private String email ;
 	
 	@Column(name="username")
 	private String username ;
@@ -43,8 +48,7 @@ public class Account implements Serializable {
 	@Column(name="fullname")
 	private String fullname ;
 	
-	@Column(name="email")
-	private String email ;
+	
 	
 	@Column(name="createDate")
 	@Temporal(TemporalType.DATE)

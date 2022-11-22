@@ -1,10 +1,21 @@
 const app = angular.module("shopping-cart-app",[]);
 app.controller("shopping-cart-ctrl",function ($scope,$http) {
+   $scope.payment = [] ;
+
+   $scope.getPayment = function () {
+        $http.get("/rest/payments").then(resp => {
+            $scope.payments = resp.data ; 
+        })
+   }
+   
+   $scope.getPayment();
+   
     $scope.cart = {
         items:[] ,
+        
         //Thêm vào giỏ hàng
         add(id){
-            var item = this.items.find(item => item.id == item);
+            var item = this.items.find(item => item.id == id);
             if(item){
                 item.qty++;
                 this.saveToLocalStorage();
@@ -61,4 +72,36 @@ app.controller("shopping-cart-ctrl",function ($scope,$http) {
         }
     }
     $scope.cart.loadFromLocalStorage();
+
+    $scope.order = {
+
+        createDate : new Date() ,
+        address : "" ,
+        phone : "",
+        accountOrder : {email: $("#username").text()},
+        payment : {id: 0} ,
+        status : 0 ,
+        get orderDetails(){
+            return $scope.cart.items.map(item => {
+                return {
+                    product : {id:item.id},
+                    price : item.price ,
+                    quantity :item.qty 
+                }
+            })
+        }  , 
+  
+        purchase(){
+            var order = angular.copy(this) ;
+            //Thực hiện đặt hàng 
+            $http.post("/rest/orders",order).then(resp => {
+                alert("Đặt hàng thành công !");
+                $scope.cart.clear();
+                location.href = "/order/detail/"+resp.data.id ;
+            }).catch(error => {
+                alert("Đặt hàng lỗi !")
+                console.log(error);
+            })
+        }
+    }
 })

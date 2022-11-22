@@ -1,15 +1,19 @@
 package datn.udpm.controller.customer;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @CrossOrigin("*")
 @Controller
 public class SecurityController {
 	@RequestMapping("/security/login/form")
-	public String loginForm(Model model) {
+	public String loginForm(Model model , HttpServletRequest request) {
+		
 		model.addAttribute("message","Vui lòng đăng nhập !");
 		return "customer/security/login";
 	}
