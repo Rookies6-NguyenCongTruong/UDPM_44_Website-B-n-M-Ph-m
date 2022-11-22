@@ -14,7 +14,7 @@ public class AccountServiceImple implements AccountService {
 	
 	@Override
 	public Account findByEmail(String email) {
-		return accountRepo.findByEmail(email);
+		return accountRepo.findById(email).get();
 	}
 
 }
