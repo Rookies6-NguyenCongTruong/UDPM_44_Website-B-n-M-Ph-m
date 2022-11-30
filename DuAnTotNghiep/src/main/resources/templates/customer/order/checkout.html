@@ -1,1 +1,73 @@
-checkout
+
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{/customer/layout/index :: dynamic(~{::main})}">
+<body>
+
+	<main class="row pt-3">
+		<div class="col-md-8"
+			th:replace="~{/customer/cart/view :: shopping-cart}"></div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header border border-0">
+					<h3>Thông tin đặt hàng</h3>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="form-group col-md-12">
+							<div>
+								<strong>Người đặt hàng :</strong>
+							</div>
+							<div class="form-control border border-0" id="username">[[${#request.remoteUser}]]</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-md-12">
+							<div>
+								<strong>Ngày đặt hàng :</strong>
+							</div>
+							<div class="form-control border border-0">{{order.createDate
+								| date:'dd-MM-yyyy'}}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<div>
+								<strong>Số điện thoại:</strong>
+							</div>
+							<input class="form-control" ng-model="order.phone">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<div>
+								<strong>Địa chỉ nhận hàng:</strong>
+							</div>
+							<input class="form-control" ng-model="order.address">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<div>
+								<strong>Hình thức thanh toán:</strong>
+							</div>
+							<div class="form-check form-check-inline" ng-repeat="pt in payments">
+								<input class="form-check-input" type="radio" 
+									value="{{pt.id}}" ng-model="order.payment.id"
+									name="inlineRadioOptions" > 
+								<label class="form-check-label" for="inlineRadio1">{{pt.name}}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<button ng-click="order.purchase()" class="btn btn-success">Thanh
+						toán</button>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

@@ -2,6 +2,7 @@ package datn.udpm;
 
 import java.util.NoSuchElementException;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -36,6 +37,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				Account user = accountService.findByEmail(username);
 				String password = pe.encode(user.getPassword());
 				String role = user.getRole().getId();
+				
+				
 				return User.withUsername(username).password(password).roles(role).build();
 			} catch (NoSuchElementException e) {
 				throw new UsernameNotFoundException(username + "not found!");

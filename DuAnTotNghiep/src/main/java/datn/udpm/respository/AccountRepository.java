@@ -5,10 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import datn.udpm.entity.Account;
 
-public interface AccountRepository extends JpaRepository<Account,Integer> {
+public interface AccountRepository extends JpaRepository<Account,String> {
 
-	
-	@Query("SELECT a FROM Account a WHERE a.email=?1")
-	public Account findByEmail(String email);
 	
 }

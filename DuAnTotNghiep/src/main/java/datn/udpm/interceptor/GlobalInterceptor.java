@@ -11,9 +11,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import datn.udpm.entity.Category;
-import datn.udpm.entity.SubCategory;
 import datn.udpm.service.CategoryService;
-import datn.udpm.service.SubCategoryService;
 
 @Component
 public class GlobalInterceptor implements HandlerInterceptor {
@@ -21,17 +19,12 @@ public class GlobalInterceptor implements HandlerInterceptor {
 	@Autowired 
 	CategoryService categoryService ;
 	
-	@Autowired
-	SubCategoryService subCategoryService ;
 
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
 		List<Category> listCategory = categoryService.findAll();
-		
-		
 		request.setAttribute("listCategory", listCategory);
-		
 	}
 	
 	
