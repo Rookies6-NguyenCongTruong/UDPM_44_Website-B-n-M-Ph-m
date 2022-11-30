@@ -1,0 +1,76 @@
+2022-11-18 21:39:08,837 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-18 21:39:27,170 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: datn.udpm:DuAnTotNghiep:0.0.1-SNAPSHOT @ C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\pom.xml.
+2022-11-18 21:39:27,939 [Worker-2: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: datn.udpm:DuAnTotNghiep:0.0.1-SNAPSHOT @ C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\pom.xml.
+2022-11-18 21:39:29,062 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-18 21:39:29,062 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-18 21:39:29,066 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-18 21:39:29,081 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-18 21:39:29,141 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-18 21:39:29,141 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-18 21:39:29,141 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-18 21:39:30,901 [Worker-3: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: datn.udpm:DuAnTotNghiep:0.0.1-SNAPSHOT @ C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\pom.xml.
+2022-11-18 21:39:32,652 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-18 21:39:32,652 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-18 21:39:32,660 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-18 21:39:32,678 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-18 21:39:32,774 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-18 21:39:32,775 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-18 21:39:32,775 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-18 22:18:16,341 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2022-11-30 09:39:56,041 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-11-30 09:40:33,999 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:34,000 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:34,004 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 09:40:34,029 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-30 09:40:34,063 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:34,063 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:34,063 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 09:40:36,106 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:36,106 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:36,111 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 09:40:36,122 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-30 09:40:36,128 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:36,128 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:36,128 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 09:40:37,219 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:37,219 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:37,222 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 09:40:37,232 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-30 09:40:37,240 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 09:40:37,240 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 09:40:37,240 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 10:00:14,522 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:00:14,522 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:00:14,527 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 10:00:14,561 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-30 10:00:14,569 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:00:14,569 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:00:14,570 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 10:02:43,585 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:02:43,585 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:02:43,587 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 10:02:43,592 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-30 10:02:43,593 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:02:43,593 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:02:43,593 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 10:02:46,427 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:02:46,427 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:02:46,428 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-30 10:02:46,428 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 10:02:46,430 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:02:46,430 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:02:46,430 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 10:03:16,189 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:03:16,190 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:03:16,190 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-30 10:03:16,190 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 10:03:16,192 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:03:16,193 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:03:16,193 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
+2022-11-30 10:03:24,779 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:03:24,779 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:03:24,784 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-30 10:03:24,796 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 28 resources
+2022-11-30 10:03:24,809 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-30 10:03:24,809 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-30 10:03:24,809 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PC\eclipse-workspace\UDPM_44_Website-B-n-M-Ph-m\DuAnTotNghiep\src\test\resources
